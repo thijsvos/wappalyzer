@@ -29,3 +29,4 @@ COPY \
 RUN yarn install
 
 ENTRYPOINT ["node", "cli.js"]
+
