@@ -1,4 +1,4 @@
-FROM node:14-alpine
+FROM node:16-alpine
 
 MAINTAINER Wappalyzer <hello@wappalyzer.com>
 
@@ -7,7 +7,7 @@ ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
 ENV CHROMIUM_BIN /usr/bin/chromium-browser
 
 RUN apk update && apk add -u --no-cache \
-	nodejs \
+        nodejs \
   udev \
   chromium \
   ttf-freefont \
