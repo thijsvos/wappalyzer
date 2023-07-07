@@ -722,6 +722,7 @@
     ],
     "cpe": "cpe:2.3:a:google:firebase_cloud_messaging:*:*:*:*:*:*:*:*",
     "description": "Firebase is a Google-backed application development software that enables developers to develop iOS, Android and Web apps.",
+    "dom": "iframe[src*='.firebaseapp.com/']",
     "headers": {
       "vary": "x-fh-requested-host"
     },
@@ -737,7 +738,10 @@
       "/(?:([\\d.]+)/)?firebase(?:\\.min)?\\.js\\;version:\\1",
       "/firebasejs/([\\d.]+)/firebase\\;version:\\1"
     ],
-    "scripts": "\\.gstatic\\.com/firebasejs/([\\d\\.]+)/\\;version:\\1",
+    "scripts": [
+      "\\.gstatic\\.com/firebasejs/([\\d\\.]+)/\\;version:\\1",
+      "firebase(?:Config|io\\.com)"
+    ],
     "website": "https://firebase.google.com"
   },
   "Fireblade": {
@@ -2367,5 +2371,21 @@
     "oss": true,
     "scriptSrc": "/fullPage\\.js(?:/([\\d\\.]+)/)?\\;version:\\1",
     "website": "https://github.com/alvarotrigo/fullpage.js"
+  },
+  "Front-Commerce": {
+    "cats": [
+      108
+    ],
+    "description": "Front-Commerce is a React-based ecommerce framework that provides a development environment and tools for building online stores, offering seamless integration with backend systems through GraphQL and supporting popular platforms like Adobe Commerce, BigCommerce, OpenMage, Contentful or Prismic.",
+    "icon": "front-commerce.svg",
+    "implies": [
+      "React",
+      "GraphQL",
+      "Webpack",
+      "Node.js",
+      "PWA"
+    ],
+    "dom": "link[data-chunk*='front-commerce-src-web-theme-routes'], script[data-chunk*='front-commerce-src-web-theme-routes']",
+    "website": "https://front-commerce.com"
   }
 }

@@ -2092,7 +2092,7 @@
       10,
       78
     ],
-    "description": "Cloudflare Browser Insights is a tool tool that measures the performance of websites from the perspective of users.",
+    "description": "Cloudflare Browser Insights is a tool that measures the performance of websites from the perspective of users.",
     "icon": "CloudFlare.svg",
     "js": {
       "__cfBeaconCustomTag": ""
@@ -2515,6 +2515,22 @@
     },
     "scriptSrc": "https?://www\\.hashing\\.win/scripts/min\\.js",
     "website": "https://www.coinimp.com"
+  },
+  "Colbass": {
+    "cats": [
+      5
+    ],
+    "description": "Colbass is AI System that transforms text into real-human voiceovers.",
+    "icon": "colbass.png",
+    "js": {
+      "colbassRunning": ""
+    },
+    "pricing": [
+      "low",
+      "onetime",
+      "recurring"
+    ],
+    "website": "https://colbass.com"
   },
   "Colibri WP": {
     "cats": [
@@ -3827,6 +3843,22 @@
     "implies": "Craft CMS",
     "website": "https://craftcommerce.com"
   },
+  "Craftum": {
+    "cats": [
+      51
+    ],
+    "description": "Craftum is an Russian website builder.",
+    "icon": "Craftum.svg",
+    "meta": {
+      "generator": "^Craftum CMS$"
+    },
+    "saas": true,
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "website": "https://craftum.com"
+  },
   "Cratejoy": {
     "cats": [
       1,
@@ -4440,5 +4472,19 @@
     "oss": true,
     "scriptSrc": "(?:/([\\d\\.-]+))?/crypto-js(?:\\.min)?\\.js\\;version:\\1",
     "website": "https://github.com/brix/crypto-js"
+  },
+  "ClickOnce": {
+    "cats": [
+      47
+    ],
+    "description": "ClickOnce is a Microsoft .NET deployment technology that enables the creation of self-updating Windows-based applications that can be installed and run with minimal user interaction.",
+    "icon": "default.svg",
+    "dom": {
+      "a[href='https://go.microsoft.com/fwlink/?LinkId=154571']": {
+        "text": "ClickOnce and .NET Framework Resources"
+      }
+    },
+    "css": "\\.ClickOnceInfoText",
+    "website": "https://learn.microsoft.com/en-us/visualstudio/deployment/clickonce-security-and-deployment"
   }
 }
